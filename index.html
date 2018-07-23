@@ -56,7 +56,7 @@
 <div id="itnew"></br></div></br>
 <label>Изменить новость</label></br>
 <input name="text" type="text" id="text"></br>
-<button type="button" onclick='var newstext = localStorage.getItem("text");document.getElementById("itnew").innerHTML += newstext;newstext.push(document.getElementById("text").value);localStorage.setItem("text", document.getElementById("text").value);'>Изменить</button>
+<button type="button" onclick='var newstext = localStorage.getItem("text");document.getElementById("itnew").innerHTML += newstext + "</br>";newstext.push(document.getElementById("text").value);localStorage.setItem("text", document.getElementById("text").value);'>Добавить новость<button>
     </div>
 </body>
 </html>
