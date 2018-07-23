@@ -51,7 +51,7 @@
 </br></br>
 <label>Изменить новость</label></br>
 <input name="text" type="text" id="text"></br>
-<button type="button" onclick='document.getElementById("newsfirst").innerHTML = document.getElementById("text").value'>Изменить</button>
+<button type="button" onclick='document.getElementById("newsfirst").innerHTML = localStorage.getItem("text");localStorage.setItem("text", document.getElementById("text").value);'>Изменить</button>
     </div>
 </body>
 </html>
